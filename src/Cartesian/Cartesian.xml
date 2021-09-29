@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>cartesian</name>
+    </assembly>
+    <members>
+        <member name="T:Cartesian.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:Cartesian.App.CreateShell">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cartesian.App.RegisterTypes(Prism.Ioc.IContainerRegistry)">
+            <summary>
+            
+            </summary>
+            <param name="containerRegistry"></param>
+        </member>
+        <member name="M:Cartesian.App.ConfigureModuleCatalog(Prism.Modularity.IModuleCatalog)">
+            <summary>
+            Introducing Modules
+            </summary>
+            <param name="moduleCatalog"></param>
+        </member>
+        <member name="M:Cartesian.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:Cartesian.ViewModels.MainWindowViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Cartesian.ViewModels.MainWindowViewModel.Title">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Cartesian.ViewModels.MainWindowViewModel.#ctor(Prism.Regions.IRegionManager,Prism.Events.IEventAggregator,Prism.Services.Dialogs.IDialogService)">
+            <summary>
+            
+            </summary>
+            <param name="regionManager"></param>
+            <param name="eventAggregator"></param>
+            <param name="dialogService"></param>
+        </member>
+        <member name="M:Cartesian.ViewModels.MainWindowViewModel.MessageReceived(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="messageSentModel"></param>
+        </member>
+        <member name="T:Cartesian.Views.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:Cartesian.Views.MainWindow.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Cartesian.Views.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>

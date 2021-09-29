@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Common</name>
+    </assembly>
+    <members>
+        <member name="T:Common.MessageSentEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Common.Models.ShapesReadModel">
+            <summary>
+            Introducing all shapes
+            Each new shape type should be introduce there
+            </summary>
+        </member>
+        <member name="P:Common.Models.ShapesReadModel.CartesianCircles">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Common.Models.ShapesReadModel.CartesianLines">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Common.Models.ShapesReadModel.CartesianTriangles">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Common.Models.Shapes.Bases.CartesianShapeModel">
+            <summary>
+            This abstract class is used to provide a common, implemented functionality among all the implementations of the component => ShapeTypeEnum.
+            Each new shape type should be inherit
+            </summary>
+        </member>
+        <member name="P:Common.Models.Shapes.Bases.CartesianShapeModel.Type">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Common.Models.Shapes.Bases.ICartesianShapeModel">
+            <summary>
+            Base Interface for Cartesian
+            Detect all models
+            </summary>
+        </member>
+        <member name="T:Common.Models.Shapes.CartesianCircleModel">
+            <summary>
+            Circle properties definition
+            <example>
+            {
+               "type": "circle",
+               "center": "0;0",
+               "radius": 15.0,
+               "filled": false,
+               "color": "127;255;0;0"
+            }
+            </example>
+            </summary>
+        </member>
+        <member name="P:Common.Models.Shapes.CartesianCircleModel.Center">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Common.Models.Shapes.CartesianCircleModel.Radius">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Common.Models.Shapes.CartesianCircleModel.Filled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Common.Models.Shapes.CartesianCircleModel.Color">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Common.Models.Shapes.CartesianLineModel">
+             <summary>
+             Line properties definition
+             <example>
+             {
+                "type": "line",
+                "a": "-1,5; 3,4",
+                "b": "2,2; 5,7",
+                "color": "127;255;255;255"
+            }
+             </example>
+             </summary>
+        </member>
+        <member name="P:Common.Models.Shapes.CartesianLineModel.A">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Common.Models.Shapes.CartesianLineModel.B">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Common.Models.Shapes.CartesianLineModel.Color">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Common.Models.Shapes.CartesianTriangleModel">
+            <summary>
+            Line properties definition
+            <example>
+            {
+               "type": "triangle",
+               "a": "-15;-20",
+               "b": "15;-20,3",
+               "c": "0;21",
+               "filled": true,
+            }  "color": "127;255;0;255"
+            </example>
+            </summary>
+        </member>
+        <member name="P:Common.Models.Shapes.CartesianTriangleModel.A">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Common.Models.Shapes.CartesianTriangleModel.B">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Common.Models.Shapes.CartesianTriangleModel.C">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Common.Models.Shapes.CartesianTriangleModel.Filled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Common.Models.Shapes.CartesianTriangleModel.Color">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Common.Models.ShapeTypeEnum">
+            <summary>
+            Introducing all shapes
+            Each new shape type should be introduce there
+            </summary>
+        </member>
+        <member name="F:Common.Models.ShapeTypeEnum.Line">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Common.Models.ShapeTypeEnum.Circle">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Common.Models.ShapeTypeEnum.Triangle">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,521 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CartesianViewerModule</name>
+    </assembly>
+    <members>
+        <member name="T:CartesianViewerModule.CartesianViewerMaduleConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CartesianViewerModule.CartesianViewerMaduleConfig.OnInitialized(Prism.Ioc.IContainerProvider)">
+            <summary>
+            
+            </summary>
+            <param name="containerProvider"></param>
+        </member>
+        <member name="M:CartesianViewerModule.CartesianViewerMaduleConfig.RegisterTypes(Prism.Ioc.IContainerRegistry)">
+            <summary>
+            
+            </summary>
+            <param name="containerRegistry"></param>
+        </member>
+        <member name="T:CartesianViewerModule.Models.ShapeHolderModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CartesianViewerModule.Models.ShapeHolderModel.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CartesianViewerModule.Models.ShapeHolderModel.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CartesianViewerModule.Models.ShapeHolderModel.CartesianShape">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CartesianViewerModule.Models.ShapeHolderModel.BiningEvents">
+             <summary>
+            
+             <returns>returns a Tuple of propertyPath and eventName </returns>
+             </summary>
+        </member>
+        <member name="T:CartesianViewerModule.Services.AxisService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CartesianViewerModule.Services.AxisService.#ctor(CartesianViewerModule.Shapes.CartesianCanvas,System.Windows.Point,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="cartesianCanvas"></param>
+            <param name="basePoint"></param>
+            <param name="margin"></param>
+        </member>
+        <member name="M:CartesianViewerModule.Services.AxisService.DrawAxes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CartesianViewerModule.Services.AxisService.DrawPositiveXAxis">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CartesianViewerModule.Services.AxisService.PositiveXAxisEndPoint">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CartesianViewerModule.Services.AxisService.DrawNegativeXAxis">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CartesianViewerModule.Services.AxisService.NegativeXAxisEndPoint">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CartesianViewerModule.Services.AxisService.DrawPositiveYAxis">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CartesianViewerModule.Services.AxisService.PositiveYAxisEndPoint">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CartesianViewerModule.Services.AxisService.DrawNegativeYAxis">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CartesianViewerModule.Services.AxisService.NegativeYAxisEndPoint">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CartesianViewerModule.Services.CartesianService">
+            <summary>
+            Optimizing Performance: 2D Graphics and Imaging <see href="https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/bb613591(v=vs.100)?redirectedfrom=MSDN">HERE</see>
+            </summary>
+        </member>
+        <member name="P:CartesianViewerModule.Services.CartesianService.Scale">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CartesianViewerModule.Services.CartesianService.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CartesianViewerModule.Services.CartesianService.NewCanvas(System.Double,System.Double)">
+            <summary>
+            renew canvas
+            </summary>
+            <param name="width"></param>
+            <param name="height"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CartesianViewerModule.Services.CartesianService.RedrawCanvas(System.Double,System.Double)">
+            <summary>
+            redraw canvas and all children
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CartesianViewerModule.Services.CartesianService.Clear">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CartesianViewerModule.Services.CartesianService.AddShapes(Common.Models.ShapesReadModel)">
+            <summary>
+            
+            </summary>
+            <param name="shapes"></param>
+        </member>
+        <member name="M:CartesianViewerModule.Services.CartesianService.DrawCartesianCircle(Common.Models.Shapes.CartesianCircleModel,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="cartesianCircle"></param>
+            <param name="mouseClickPropertyPath"></param>
+            <returns>given unique name</returns>
+        </member>
+        <member name="M:CartesianViewerModule.Services.CartesianService.DrawCircle(Common.Models.Shapes.CartesianCircleModel,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="cartesianCircle"></param>
+            <param name="name"></param>
+            <param name="mouseClickPropertyPath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CartesianViewerModule.Services.CartesianService.DrawCartesianLine(Common.Models.Shapes.CartesianLineModel,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="cartesianLine"></param>
+            <param name="mouseClickPropertyPath"></param>
+        </member>
+        <member name="M:CartesianViewerModule.Services.CartesianService.DrawLine(Common.Models.Shapes.CartesianLineModel,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="cartesianLine"></param>
+            <param name="name"></param>
+            <param name="mouseClickPropertyPath"></param>
+        </member>
+        <member name="M:CartesianViewerModule.Services.CartesianService.DrawCartesianTriangle(Common.Models.Shapes.CartesianTriangleModel,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="cartesianTriangle"></param>
+            <param name="mouseClickPropertyPath"></param>
+        </member>
+        <member name="M:CartesianViewerModule.Services.CartesianService.DrawTriangle(Common.Models.Shapes.CartesianTriangleModel,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="cartesianTriangle"></param>
+            <param name="name"></param>
+            <param name="mouseClickPropertyPath"></param>
+        </member>
+        <member name="M:CartesianViewerModule.Services.CartesianService.GetProperX(System.Double)">
+            <summary>
+            
+            </summary>
+            <param name="x"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CartesianViewerModule.Services.CartesianService.GetProperY(System.Double)">
+            <summary>
+            
+            </summary>
+            <param name="y"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CartesianViewerModule.Services.CartesianService.DrawAxes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CartesianViewerModule.Services.CartesianService.GetMargin">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CartesianViewerModule.Services.CartesianService.GetMiddleOfPage">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:CartesianViewerModule.Services.CartesianService.ShapesHolder">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CartesianViewerModule.Services.CartesianService.GetShapeByName(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="uniqName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CartesianViewerModule.Shapes.CartesianCanvas">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CartesianViewerModule.Shapes.Events.EventExtentions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CartesianViewerModule.Shapes.Events.EventExtentions.SetShapeTrigger(System.Windows.Shapes.Shape,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="contentControl"></param>
+            <param name="propertyPath"></param>
+            <param name="eventName"></param>
+        </member>
+        <member name="T:CartesianViewerModule.Shapes.ShapesBuilder.CartesianCircle">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CartesianViewerModule.Shapes.ShapesBuilder.CartesianCircle.#ctor(Common.Models.Shapes.CartesianCircleModel,System.Double)">
+            <summary>
+            
+            </summary>
+            <param name="circle"></param>
+            <param name="scale"></param>
+        </member>
+        <member name="M:CartesianViewerModule.Shapes.ShapesBuilder.CartesianCircle.BuildCircle(System.Double,System.Double)">
+            <summary>
+            
+            </summary>
+            <param name="properX"></param>
+            <param name="properY"></param>
+        </member>
+        <member name="M:CartesianViewerModule.Shapes.ShapesBuilder.CartesianCircle.AttachEvent(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="propertyPath"></param>
+            <param name="eventName"></param>
+        </member>
+        <member name="P:CartesianViewerModule.Shapes.ShapesBuilder.CartesianCircle.Shape">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CartesianViewerModule.Shapes.ShapesBuilder.CartesianLine">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CartesianViewerModule.Shapes.ShapesBuilder.CartesianLine.#ctor(Common.Models.Shapes.CartesianLineModel)">
+            <summary>
+            
+            </summary>
+            <param name="line"></param>
+        </member>
+        <member name="M:CartesianViewerModule.Shapes.ShapesBuilder.CartesianLine.BuildLine(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            
+            </summary>
+            <param name="properX1"></param>
+            <param name="properY1"></param>
+            <param name="properX2"></param>
+            <param name="properY2"></param>
+        </member>
+        <member name="M:CartesianViewerModule.Shapes.ShapesBuilder.CartesianLine.AttachEvent(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="propertyPath"></param>
+            <param name="eventName"></param>
+        </member>
+        <member name="P:CartesianViewerModule.Shapes.ShapesBuilder.CartesianLine.Shape">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CartesianViewerModule.Shapes.ShapesBuilder.CartesianTriangle">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CartesianViewerModule.Shapes.ShapesBuilder.CartesianTriangle.#ctor(Common.Models.Shapes.CartesianTriangleModel)">
+            <summary>
+            
+            </summary>
+            <param name="triangle"></param>
+        </member>
+        <member name="M:CartesianViewerModule.Shapes.ShapesBuilder.CartesianTriangle.BuildTriangle(System.Windows.Point,System.Windows.Point,System.Windows.Point)">
+            <summary>
+            
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <param name="c"></param>
+        </member>
+        <member name="M:CartesianViewerModule.Shapes.ShapesBuilder.CartesianTriangle.AttachEvent(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="propertyPath"></param>
+            <param name="eventName"></param>
+        </member>
+        <member name="P:CartesianViewerModule.Shapes.ShapesBuilder.CartesianTriangle.Shape">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CartesianViewerModule.Shapes.ShapesBuilder.IShapeBuilder">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CartesianViewerModule.Shapes.ShapesBuilder.IShapeBuilder.Shape">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CartesianViewerModule.Shapes.ShapesBuilder.IShapeDirector">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CartesianViewerModule.Shapes.ShapesBuilder.IShapeDirector.GetShape(Common.Models.Shapes.CartesianCircleModel,System.Double,System.Double,System.Double,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <param name="properX"></param>
+            <param name="properY"></param>
+            <param name="scale"></param>
+            <param name="mouseClickPropertyPath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CartesianViewerModule.Shapes.ShapesBuilder.IShapeDirector.GetShape(Common.Models.Shapes.CartesianLineModel,System.Double,System.Double,System.Double,System.Double,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <param name="properX1"></param>
+            <param name="properY1"></param>
+            <param name="properX2"></param>
+            <param name="properY2"></param>
+            <param name="mouseClickPropertyPath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CartesianViewerModule.Shapes.ShapesBuilder.IShapeDirector.GetShape(Common.Models.Shapes.CartesianTriangleModel,System.Windows.Point,System.Windows.Point,System.Windows.Point,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <param name="a"></param>
+            <param name="b"></param>
+            <param name="c"></param>
+            <param name="mouseClickPropertyPath"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CartesianViewerModule.Shapes.ShapesBuilder.ShapeDirector">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CartesianViewerModule.Shapes.ShapesBuilder.ShapeDirector.GetShape(Common.Models.Shapes.CartesianCircleModel,System.Double,System.Double,System.Double,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <param name="properX"></param>
+            <param name="properY"></param>
+            <param name="scale"></param>
+            <param name="mouseClickPropertyPath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CartesianViewerModule.Shapes.ShapesBuilder.ShapeDirector.GetShape(Common.Models.Shapes.CartesianLineModel,System.Double,System.Double,System.Double,System.Double,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <param name="properX1"></param>
+            <param name="properY1"></param>
+            <param name="properX2"></param>
+            <param name="properY2"></param>
+            <param name="mouseClickPropertyPath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CartesianViewerModule.Shapes.ShapesBuilder.ShapeDirector.GetShape(Common.Models.Shapes.CartesianTriangleModel,System.Windows.Point,System.Windows.Point,System.Windows.Point,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <param name="a"></param>
+            <param name="b"></param>
+            <param name="c"></param>
+            <param name="mouseClickPropertyPath"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CartesianViewerModule.ViewModels.CartesianViewerUserControlViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CartesianViewerModule.ViewModels.CartesianViewerUserControlViewModel.RedrawCanvasWhenSizeChange">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CartesianViewerModule.ViewModels.CartesianViewerUserControlViewModel.Scale">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CartesianViewerModule.ViewModels.CartesianViewerUserControlViewModel.#ctor(System.Windows.Controls.Grid,Prism.Events.IEventAggregator)">
+            <summary>
+            
+            </summary>
+            <param name="mainViewBox"></param>
+            <param name="eventAggregator"></param>
+        </member>
+        <member name="M:CartesianViewerModule.ViewModels.CartesianViewerUserControlViewModel.MessageReceived(Common.Models.ShapesReadModel)">
+            <summary>
+            
+            </summary>
+            <param name="messageSentModel"></param>
+        </member>
+        <member name="M:CartesianViewerModule.ViewModels.CartesianViewerUserControlViewModel.ClearViewer(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="messageSentModel"></param>
+        </member>
+        <member name="P:CartesianViewerModule.ViewModels.CartesianViewerUserControlViewModel.UserControlLoaded">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CartesianViewerModule.ViewModels.CartesianViewerUserControlViewModel.HandleUserControlLoaded">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CartesianViewerModule.ViewModels.CartesianViewerUserControlViewModel.UserControlSizeChanged">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CartesianViewerModule.ViewModels.CartesianViewerUserControlViewModel.HandleUserControlSizeChanged">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CartesianViewerModule.ViewModels.CartesianViewerUserControlViewModel.AddShapes(Common.Models.ShapesReadModel)">
+            <summary>
+            
+            </summary>
+            <param name="shapes"></param>
+        </member>
+        <member name="T:CartesianViewerModule.Views.CartesianViewerUserControl">
+            <summary>
+            Interaction logic for CartesianUserControl.xaml
+            </summary>
+            <summary>
+            CartesianViewerUserControl
+            </summary>
+        </member>
+        <member name="M:CartesianViewerModule.Views.CartesianViewerUserControl.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CartesianViewerModule.Views.CartesianViewerUserControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>

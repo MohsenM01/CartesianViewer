@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TopNavigatorModule</name>
+    </assembly>
+    <members>
+        <member name="T:TopNavigatorModule.TopNavigatorModuleConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:TopNavigatorModule.TopNavigatorModuleConfig.OnInitialized(Prism.Ioc.IContainerProvider)">
+            <summary>
+            
+            </summary>
+            <param name="containerProvider"></param>
+        </member>
+        <member name="M:TopNavigatorModule.TopNavigatorModuleConfig.RegisterTypes(Prism.Ioc.IContainerRegistry)">
+            <summary>
+            
+            </summary>
+            <param name="containerRegistry"></param>
+        </member>
+        <member name="T:TopNavigatorModule.ViewModels.TopNavigatorUserControlViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TopNavigatorModule.ViewModels.TopNavigatorUserControlViewModel.NavigateCommand">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:TopNavigatorModule.ViewModels.TopNavigatorUserControlViewModel.#ctor(Prism.Events.IEventAggregator)">
+            <summary>
+            
+            </summary>
+            <param name="eventAggregator"></param>
+        </member>
+        <member name="M:TopNavigatorModule.ViewModels.TopNavigatorUserControlViewModel.Navigate(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="navigatePath"></param>
+        </member>
+        <member name="T:TopNavigatorModule.Views.TopNavigatorUserControl">
+            <summary>
+            Interaction logic for TopNavigatorUserControl.xaml
+            </summary>
+            <summary>
+            TopNavigatorUserControl
+            </summary>
+        </member>
+        <member name="M:TopNavigatorModule.Views.TopNavigatorUserControl.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:TopNavigatorModule.Views.TopNavigatorUserControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>

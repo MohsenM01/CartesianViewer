@@ -1,0 +1,37 @@
+[
+  {
+    "type": "circle",
+    "center": "0;0",
+    "radius": 150.0,
+    "filled": true,
+    "color": "127;255;10;0"
+  },
+  {
+    "type": "circle",
+    "center": "100;180",
+    "radius": 20.0,
+    "filled": true,
+    "color": "127;255;255;102"
+  },
+  {
+    "type": "circle",
+    "center": "-200;-178.5",
+    "radius": 30.0,
+    "filled": true,
+    "color": "127;178;102;255"
+  },
+  {
+    "type": "circle",
+    "center": "-221;195.4",
+    "radius": 80.6,
+    "filled": true,
+    "color": "127;102;178;255"
+  },
+  {
+    "type": "circle",
+    "center": "100;-300",
+    "radius": 50.0,
+    "filled": false,
+    "color": "127;178;255;102"
+  }
+]

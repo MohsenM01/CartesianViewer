@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LoadDataModule</name>
+    </assembly>
+    <members>
+        <member name="T:LoadDataModule.DataSourcesFactory.DataSourceFactory">
+            <summary>
+            it is implemented with Abstract Factory pattern
+            There are several ways to implement this scenario
+            </summary>
+        </member>
+        <member name="M:LoadDataModule.DataSourcesFactory.DataSourceFactory.GetJsonDataSource">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:LoadDataModule.DataSourcesFactory.IDataSourceFactory">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LoadDataModule.DataSourcesFactory.IDataSourceFactory.GetJsonDataSource">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:LoadDataModule.DataSourcesFactory.IFileDataSource">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LoadDataModule.DataSourcesFactory.IFileDataSource.GetData(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="T:LoadDataModule.DataSourcesFactory.JsonFileDataSource">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LoadDataModule.DataSourcesFactory.JsonFileDataSource.GetData(System.String)">
+            <summary>
+            Read data from test, validate, extract data
+            </summary>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="T:LoadDataModule.JsonConverter.JsonStringColorConverter">
+            <summary>
+            create Color converter for the JSON serialization classes
+            See <see href="https://docs.microsoft.com/en-us/dotnet/standard/serialization/system-text-json-converters-how-to?pivots=dotnet-5-0">HERE</see>
+            </summary>
+        </member>
+        <member name="M:LoadDataModule.JsonConverter.JsonStringColorConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)">
+            <summary>
+            
+            </summary>
+            <param name="reader"></param>
+            <param name="typeToConvert"></param>
+            <param name="options"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LoadDataModule.JsonConverter.JsonStringColorConverter.Write(System.Text.Json.Utf8JsonWriter,System.Windows.Media.Color,System.Text.Json.JsonSerializerOptions)">
+            <summary>
+            
+            </summary>
+            <param name="writer"></param>
+            <param name="value"></param>
+            <param name="options"></param>
+        </member>
+        <member name="T:LoadDataModule.JsonConverter.JsonStringPointConverter">
+            <summary>
+            create Point converter for the JSON serialization classes
+            See <see href="https://docs.microsoft.com/en-us/dotnet/standard/serialization/system-text-json-converters-how-to?pivots=dotnet-5-0">HERE</see>
+            </summary>
+        </member>
+        <member name="M:LoadDataModule.JsonConverter.JsonStringPointConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)">
+            <summary>
+            
+            </summary>
+            <param name="reader"></param>
+            <param name="typeToConvert"></param>
+            <param name="options"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LoadDataModule.JsonConverter.JsonStringPointConverter.Write(System.Text.Json.Utf8JsonWriter,System.Windows.Point,System.Text.Json.JsonSerializerOptions)">
+            <summary>
+            
+            </summary>
+            <param name="writer"></param>
+            <param name="value"></param>
+            <param name="options"></param>
+        </member>
+        <member name="T:LoadDataModule.JsonConverter.JsonStringShapeTypeEnumConverter">
+            <summary>
+            create ShapeTypeEnum converter for the JSON serialization classes
+            See <see href="https://docs.microsoft.com/en-us/dotnet/standard/serialization/system-text-json-converters-how-to?pivots=dotnet-5-0">HERE</see>
+            </summary>
+        </member>
+        <member name="M:LoadDataModule.JsonConverter.JsonStringShapeTypeEnumConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)">
+            <summary>
+            
+            </summary>
+            <param name="reader"></param>
+            <param name="typeToConvert"></param>
+            <param name="options"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LoadDataModule.JsonConverter.JsonStringShapeTypeEnumConverter.Write(System.Text.Json.Utf8JsonWriter,Common.Models.ShapeTypeEnum,System.Text.Json.JsonSerializerOptions)">
+            <summary>
+            
+            </summary>
+            <param name="writer"></param>
+            <param name="value"></param>
+            <param name="options"></param>
+        </member>
+        <member name="T:LoadDataModule.LoadDataModuleConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LoadDataModule.LoadDataModuleConfig.OnInitialized(Prism.Ioc.IContainerProvider)">
+            <summary>
+            
+            </summary>
+            <param name="containerProvider"></param>
+        </member>
+        <member name="M:LoadDataModule.LoadDataModuleConfig.RegisterTypes(Prism.Ioc.IContainerRegistry)">
+            <summary>
+            
+            </summary>
+            <param name="containerRegistry"></param>
+        </member>
+        <member name="T:LoadDataModule.ViewModels.FileViewerUserControlViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:LoadDataModule.ViewModels.FileViewerUserControlViewModel.OpenFileDialogCommand">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LoadDataModule.ViewModels.FileViewerUserControlViewModel.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LoadDataModule.ViewModels.FileViewerUserControlViewModel.OpenFileDialog">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:LoadDataModule.ViewModels.FileViewerUserControlViewModel.Title">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:LoadDataModule.ViewModels.FileViewerUserControlViewModel._fFilePathError">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:LoadDataModule.ViewModels.FileViewerUserControlViewModel.FilePathError">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:LoadDataModule.ViewModels.FileViewerUserControlViewModel.FilePath">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:LoadDataModule.ViewModels.FileViewerUserControlViewModel.CloseDialogCommand">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="E:LoadDataModule.ViewModels.FileViewerUserControlViewModel.RequestClose">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LoadDataModule.ViewModels.FileViewerUserControlViewModel.CloseDialog(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="parameter"></param>
+        </member>
+        <member name="M:LoadDataModule.ViewModels.FileViewerUserControlViewModel.RaiseRequestClose(Prism.Services.Dialogs.IDialogResult)">
+            <summary>
+            
+            </summary>
+            <param name="dialogResult"></param>
+        </member>
+        <member name="M:LoadDataModule.ViewModels.FileViewerUserControlViewModel.CanCloseDialog">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LoadDataModule.ViewModels.FileViewerUserControlViewModel.OnDialogClosed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LoadDataModule.ViewModels.FileViewerUserControlViewModel.OnDialogOpened(Prism.Services.Dialogs.IDialogParameters)">
+            <summary>
+            
+            </summary>
+            <param name="parameters"></param>
+        </member>
+        <member name="T:LoadDataModule.Views.FileViewerUserControl">
+            <summary>
+            Interaction logic for FileViewerUserControl.xaml
+            </summary>
+            <summary>
+            FileViewerUserControl
+            </summary>
+        </member>
+        <member name="M:LoadDataModule.Views.FileViewerUserControl.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LoadDataModule.Views.FileViewerUserControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>
